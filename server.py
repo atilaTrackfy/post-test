@@ -4,3 +4,6 @@ app = Flask(__name__)
 def result():
     print(request.form['foo'])
     return 'Received'
+
+if __name__ == '__main__':
+    app.run(debug=True)
